@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet"
+  </head>
+<body>
+<h1 
+  id="title">
+  Dating application form &#128152&#9997
+</h1>
+<p id="description">
+  Calling all Romeos and Juliets! Looking for some
+  romance? A
+  bit of amore? Then take the time to fill in this survey
+  form to be matched up with someone who could be the   'one.'
+</p>
+  <form id="survey-form">
+  <fieldset>
+    <label id="name-label" for="name-label">
+      Name
+      <input 
+      id="name" 
+      type="text" 
+      placeholder="What is your name?" 
+      required>
+    </label>
+  <label id="email-label" for="email-label">Email Address</label>
+    <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+  <label id="number-label" for="number">Age</label> 
+    <input 
+      id="number" 
+      type="number" 
+      min="18" 
+      max="100" 
+      placeholder="Age" 
+      required>
+  <label for="personality">Do you have a personality type? </label>
+  <select id="dropdown" name="personality" placeholder="">Do you have a personality type?
+    <option value="" disabled selected>Select your option
+    </option> 
+    <option value="not-applicable">Not Applicable</option>
+    <option value="INTJ">INTJ</option>
+    <option value="INTP">INTP</option>
+    <option value="ENTJ">INTJ</option>
+    <option value="ENTP">ENTP</option>
+    <option value="INFJ">INFJ</option>
+    <option value="INFP">INFP</option>
+    <option value="ENFJ">ENFJ</option>
+    <option value="ENFP">ENFP</option>
+    <option value="ISTJ">ISTJ</option>
+    <option value="ESTJ">ESTJ</option>
+    <option value="ESFJ">ESFJ</option>
+    <option value="ISTP">ISTP</option>
+    <option value="ISFP">ISFP</option>
+    <option value="ESTP">ESTP</option>
+  </select>
+</fieldset>
+
+<fieldset>
+  <a>What would you define as your gender?</a>
+  <label for="i-am-male-label">Male</label>
+  <input id="i-am-male" value="male" name="gender" type="radio">
+  <label for="i-am-female-label">Female</label>
+  <input id="i-am-female" value="male" name="gender" type="radio">
+  <label for="i-am-other-label">Other</label>
+  <input id="i-am-other" value="other" name="gender" type="radio">
+</fieldset>
+<fieldset>
+  <a>What gender(s) are you into? (can pick more than one)
+  <label for="looking-for-male-label">Male</label>
+  <input type="checkbox" id="looking-for-male" value="looking-for-male" name="looking-for-male">
+  <label for="looking-for-female-label">Female</label>
+  <input type="checkbox" value="looking-for-female" name="looking-for-female">
+  <label for="looking-for-other-label">Other</label>
+  <input type="checkbox" value="looking-for-other" name="looking-for-other">
+</fieldset>
+<fieldset>
+  <a>Now write a short description of yourself! What do you look like? What are your hobbies? (500 character limit)</a>
+  <textarea id="self-description" rows="4" cols="200" maxlength="500" placeholder="Sell yourself" required></textarea>
+</fieldset>
+  <input id="submit" type="submit" value="Submit">
+</form>
+</body>
+</html>
